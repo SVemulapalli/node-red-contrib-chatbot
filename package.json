@@ -12,7 +12,9 @@
     "commit-wiki": "git add . && git commit -m \"docs\"",
     "build-docs": "git clone https://github.com/guidone/node-red-contrib-chatbot.wiki.git ./wiki && node ./bin/generate-docs && rm -rf ./wiki",
     "clean": "rm -rf ./wiki",
-    "version": "git clone https://github.com/guidone/node-red-contrib-chatbot.wiki.git ./wiki && node ./bin/generate-docs && rm -rf ./wiki && git add *.html && git add *.md"
+    "version": "git clone https://github.com/guidone/node-red-contrib-chatbot.wiki.git ./wiki && node ./bin/generate-docs && rm -rf ./wiki && git add *.html && git add *.md",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -109,12 +111,14 @@
     "twilio": "^3.19.2",
     "underscore": "^1.8.3",
     "underscore.string": "^3.3.4",
-    "viber-bot": "^1.0.13"
+    "viber-bot": "^1.0.13",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "chai": "^4.1.1",
     "chai-spies": "^1.0.0",
     "eslint": "^4.12.1",
     "jest": "^22.0.6"
-  }
+  },
+  "snyk": true
 }
