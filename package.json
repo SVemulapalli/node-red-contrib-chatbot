@@ -99,7 +99,7 @@
     "node-telegram-bot-api": "^0.30.0",
     "prettyjson": "^1.2.1",
     "qr-image": "^3.1.0",
-    "recastai": "^3.7.0",
+    "recastai": "^4.0.0",
     "request": "^2.87.0",
     "rivescript": "1.17.2",
     "sanitize-filename": "^1.6.0",
